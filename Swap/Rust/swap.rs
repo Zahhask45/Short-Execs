@@ -1,5 +1,6 @@
 fn main(){
 	{
+		// Using Bitwise (XOR)
 		let mut a: i8 = 10;
 		let mut b: i8 = 45;
 		
@@ -15,8 +16,8 @@ fn main(){
 		println!("a: {a}");
 		println!("b: {b}");
 	}
-	// Using Arithmetics (bitwise)
 	println!("\n==================\n");
+	// Using Arithmetics (+, -)
 	{
 		let mut a: i8 = 10;
 		let mut b: i8 = 45;
@@ -31,6 +32,22 @@ fn main(){
 		a = a - b; // new value for a is -> 45
 
 		println!("After the Swapping (Arithmetics)");
+		println!("a: {a}");
+		println!("b: {b}");
+	}
+	// Simplier way
+	println!("\n==================\n");
+	{
+		let mut a: i8 = 10;
+		let mut b: i8 = 45;
+		
+		println!("Before the Swapping (Simplier way)");
+		println!("a: {a}");
+		println!("b: {b}");
+
+		(a, b) = (b, a);
+
+		println!("After the Swapping (Simplier way)");
 		println!("a: {a}");
 		println!("b: {b}");
 	}
